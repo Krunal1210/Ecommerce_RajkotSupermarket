@@ -1,0 +1,70 @@
+ 
+        .widget-content .tableactions
+        {
+            overflow: hidden;
+            padding-top:17px;
+            float: left;
+        }
+        
+        .widget-content .tableactions select
+        {
+            width: 100px;
+            margin-right: 5px;
+            vertical-align: middle;
+            outline: none;
+        }
+        .widget-content table tr td, .widget-content table tr th
+        {
+            border: 1px solid #ddd;
+            padding: 10px;
+            line-height: normal;
+            text-align: left;
+        }
+        
+        .widget-content .pagination
+        {
+            font-size: 10px;
+            font-weight: bold;
+            padding-bottom: 15px;
+           
+            border-top: 1px solid #eee;
+        }
+        
+        .widget-content .pagination.right
+        {
+            float: right;
+            text-align: right;
+            padding-top: -11px;
+            border: 0;
+            width: 500px;
+            overflow: hidden;
+        }
+        
+        .widget-content .pagination a
+        {
+            border: 1px solid #ccc;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding: 3px 6px;
+            margin: 0 1px;
+        }
+        
+        .widget-content .pagination a.active
+        {
+            background: #39a3e6;
+            border: 1px solid #0082d5;
+            color: #fff;
+        }
+        
+        .widget-content .pagination a:hover
+        {
+            color: #fff;
+            background: #ec8526;
+            border: 1px solid #d77011;
+        }
+        .widget-content .pagination.right
+        {
+            text-align: right;
+        }
+ 

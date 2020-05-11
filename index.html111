@@ -1,0 +1,180 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Rajkot Supermarket</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.homeSlider').cycle({
+                fx: 'fade',
+                sync: 'true',
+                timeout: 3000
+            });
+        });
+    </script>
+    <style>
+        #footer1 {
+            background-color: #676767;
+            color: #fff;
+            padding: 7px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    <title>Rajkot Supermarket</title>
+</head>
+<body>
+    <footer id="footer1" class="cf">
+        <div class="wrapper">
+            <table width="150px" align="right">
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Login</a> </td>
+                    <td>
+
+                        <a href="#" style="float: right;">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </footer>
+    <div class="wrapper">
+        <!-- Stare Header -->
+
+        <header class="header cf">
+            <a href="index.html" class="logo">
+                <img src="images/karmyogi-mart-logo.png"></a>
+            <form class="searchBox">
+                <input type="text" value="Search for more than 10,000 products..." name="q" id="id_q" autocomplete="off" style="color: rgb(178, 178, 178); border-color: rgb(190, 188, 189);" class="inputText">
+                <input type="submit" value="Search" class="submitBut">
+            </form>
+            <div class="yourItems">
+                <div class="leftLine"></div>
+                Your Basket
+        <span class="basketItems">0 items</span>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <div class="cf">
+            <div class="mainNavigation">
+                <div class="manuBar">SHOP</div>
+                <nav class="menuNav">
+                    <ul class="cf">
+                        <li><a href="#">Electronics</a>
+                            <div class="dropdownBox">
+                                <div class="dropdownBox-inner">
+                                    <div class="dpHeading"><a href="#">Fruits &amp;  Vegetables</a></div>
+                                    <div class="column2">
+                                        <ul>
+                                            <li><a href="http://bigbasket.com/pc/fruits-vegetables/cut-vegetables/?nc=nb">Cut Vegetables </a></li>
+                                            <li><a href="http://bigbasket.com/pc/fruits-vegetables/flowers/?nc=nb">Flowers </a></li>
+                                            <li class="submenu"><span class="white-bg"></span>
+                                                <a href="http://bigbasket.com/pc/fruits-vegetables/fruits/?nc=nb">Fruits
+                                                    <img alt="arrow" src="images/ArrowOrange.png"></a>
+                                                <div class="subDropdown">
+                                                    <ul>
+                                                        <li class="categoryName"><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/?nc=nb">Fruits</a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/apple/?nc=nb">- Apple </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/banana/?nc=nb">- Banana </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/exotic-fruits/?nc=nb">- Exotic Fruits </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/mangoes/?nc=nb">- Mangoes </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/melon/?nc=nb">- Melon </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/oranges-sweet-lime/?nc=nb">- Oranges &amp; Sweet Lime </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/fruits/other-fruits/?nc=nb">- Other Fruits </a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="http://bigbasket.com/pc/fruits-vegetables/organic-fv/?nc=nb">Organic F&amp;V </a></li>
+                                            <li class="submenu">
+                                                <span class="white-bg"></span>
+                                                <a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/?nc=nb">Vegetables
+                                                    <img alt="arrow" src="images/ArrowOrange.png"></a>
+                                                <div class="subDropdown">
+                                                    <ul>
+                                                        <li class="uiv2-category-name"><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/?nc=nb">Vegetables</a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/beans/?nc=nb">- Beans </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/brinjals/?nc=nb">- Brinjals </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/chilli-lemon-garlic-ginger/?nc=nb">- Chilli, Lemon, Garlic &amp; Ginger </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/exotic-vegetables/?nc=nb">- Exotic Vegetables </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/gourd-cucumber/?nc=nb">- Gourd &amp; Cucumber </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/leafy-vegetables/?nc=nb">- Leafy Vegetables </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/other-vegetables/?nc=nb">- Other Vegetables </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/potato-onion-tomato/?nc=nb">- Potato, Onion &amp; Tomato </a></li>
+                                                        <li><a href="http://bigbasket.com/pc/fruits-vegetables/vegetables/root-vegetables/?nc=nb">- Root Vegetables </a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="column2">
+                                        <span>Popular Brands</span>
+                                        <ul>
+                                            <li><a href="http://bigbasket.com/pb/fresho/?nc=nb">Fresho</a></li>
+                                            <li><a href="http://bigbasket.com/pb/turkel/?nc=nb">Turkel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="categoryPic" href="#" style="width: 560px; height: 400px; background: url(images/categoryPic.png) no-repeat right bottom;"></a>
+                            </div>
+                        </li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Footwear</a></li>
+                        <li><a href="#">Health &amp; beauty</a></li>
+                        <li><a href="#">Snacks &amp; more</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="homeSlider">
+                <li>
+                    <img src="images/banner-1.jpg"></li>
+                <li>
+                    <img src="images/banner-2.jpg"></li>
+                <li>
+                    <img src="images/banner-1.jpg"></li>
+            </ul>
+        </div>
+
+        <ul class="proList cf">
+            <li><a href="#">
+                <img src="images/pro-1.png"></a></li>
+            <li><a href="#">
+                <img src="images/pro-2.png"></a></li>
+            <li><a href="#">
+                <img src="images/pro-3.png"></a></li>
+            <li><a href="#">
+                <img src="images/pro-4.png"></a></li>
+            <li><a href="#">
+                <img src="images/pro-5.png"></a></li>
+        </ul>
+
+
+        <h1><span>Welcome to</span> Rajkot Supermarket</h1>
+    </div>
+
+
+
+    <footer id="footer" class="cf">
+        <ul class="cf">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>
+            &copy; 2014 Rajkot Supermarket. All Rights Reserved.<br>
+            Site Design &amp; Develop by : <a target="_blank" href="http://whitepearl.biz/">White Pearl IT Solution</a>
+        </p>
+    </footer>
+
+</body>
+</html>

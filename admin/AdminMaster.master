@@ -1,0 +1,132 @@
+﻿<%@ Master Language="VB" CodeFile="AdminMaster.master.vb" Inherits="admin_AdminMaster" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> Admin Panel</title>
+    <%--   <link rel="shortcut icon" href="<%# App.Value("siteUrl") %>favicon.ico" />--%>
+    <style type="text/css" media="all">
+        @import url("css/style.css");
+        @import url("css/jquery.wysiwyg.css");
+        @import url("css/facebox.css");
+    </style>
+  <%--  <script src="js/jquery-1.6.2.js" type="text/javascript"></script>--%>
+    <script src="js/general.js" type="text/javascript"></script>
+    <style type="text/css" media="all">
+        @import url("css/visualize.css");
+        @import url("css/date_input.css");
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+   <%-- <script type="text/javascript" src="js/jquery.img.preload.js"></script>
+    <script type="text/javascript" src="js/jquery.wysiwyg.js"></script>
+    <script type="text/javascript" src="js/jquery.date_input.pack.js"></script>
+    <script type="text/javascript" src="js/facebox.js"></script>
+    <script type="text/javascript" src="js/jquery.visualize.js"></script>
+    <script type="text/javascript" src="js/jquery.visualize.tooltip.js"></script>
+    <script type="text/javascript" src="js/jquery.select_skin.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="js/ajaxupload.js"></script>
+    <script type="text/javascript" src="js/jquery.pngfix.js"></script>--%>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="hld">
+        <div class="wrapper">
+            <!-- wrapper begins -->
+            <div id="header">
+                <div class="hdrl">
+                </div>
+                <div class="hdrr">
+                </div>
+                <ul id="nav" style="margin-left: -15px;">
+                    <li>
+                        <%--<img src="../images/logo-arbest.png" width="50" height="50">--%></li>
+                    <li><a href="Home.aspx">Home</a></li>
+                   
+                    <li runat="server" id="liMaster"><a href="#">Master</a>
+                        <ul>
+                            <li><a href="CompanyList.aspx">Company</a></li>
+                            <li><a href="CategoryList.aspx">Category</a></li>
+                            <li><a href="ProductList.aspx">Product</a></li>
+                            <li><a href="CommissonList.aspx">Commision Slab</a></li>
+                            <li><a href="BankList.aspx">Bank Master</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="AdminCustomerList.aspx">GroupHead</a>
+                        <ul>
+                            <li><a href="AdminCustomerList.aspx">GroupHead List</a></li>
+                            <li><a href="AdminCustomerModify.aspx">GroupHead Add</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="policyCustomer.aspx">Insured Name</a></li>
+                    <li id="liEmployee" runat="server"><a href="EmployeeList.aspx">Employee</a>
+                        <ul>
+                            <li><a href="EmployeeList.aspx">Employee List</a></li>
+                            <li><a href="EmployeeModify.aspx">Employee Add</a></li>
+                        </ul>
+                    </li>
+                    <li id="li2" runat="server"><a href="AgentNewList.aspx">Agent</a>
+                        <ul>
+                            <li><a href="AgentNewList.aspx">Agent List</a></li>
+                            <li><a href="AgentModifyNew.aspx">Agent Add</a></li>
+                        </ul>
+                    </li>
+                    <li id="li1" runat="server"><a href="SubAgentNewList.aspx">Sub Agent</a>
+                        <ul>
+                            <li><a href="SubAgentNewList.aspx">Sub Agent List</a></li>
+                            <li><a href="SubAgentModifyNew.aspx">Sub Agent Add</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Other</a>
+                        <ul>
+                        <li><a href="Document.aspx">Document Upload</a></li>
+                            <li><a href="AnnouncementList.aspx">Announcement</a></li>
+                            <li><a href="Greeting.aspx">Greeting List</a></li>
+                            <li><a href="TicketList.aspx">UnSolved Query</a></li>
+                            <li><a href="SolveTicketList.aspx">Solved Query</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Report</a>
+                        <ul>
+                            <li><a href="Reports.aspx">MIS Report</a></li>
+                            <li><a href="RenewalReports.aspx">Renewal Report</a></li>
+                            <li><a href="ClaimRegister.aspx">Claim Register</a></li>
+                            <li><a href="Collection.aspx">Collection Report</a></li>
+                            <li><a href="ClaimList.aspx">Claim List</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Setting</a>
+                        <ul>
+                            <li><a href="Profile.aspx">Profile</a></li>
+                            <li><a href="ChangePassword.aspx">Change Password</a></li>
+                            <li>
+                                <asp:LinkButton ID="lnkLogout" CausesValidation="false" Text="logout" runat="server" /></li>
+                        </ul>
+                    </li>
+                    <li style="color: White ! important;"><a href="OptionPage.aspx">Go To Website</a></li>
+                </ul>
+                <p class="user" style="color: White;">
+                    Hello <span id="aUserName" runat="server"></span>
+                </p>
+            </div>
+            <!-- #header ends -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer" style="padding: 10px 0 7px;">
+                <p class="right">
+                    <a target="_blank" href="http://www.whitepearl.biz">whitepearl.biz</a></p>
+            </div>
+        </div>
+        <!-- wrapper ends -->
+    </div>
+    </form>
+</body>
+</html>
